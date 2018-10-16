@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+
+    <ImageButton
+        android:id="@+id/btn_left"
+        android:layout_width="79dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginStart="66dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/izq"
+        android:text="LEFT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/btn_right"
+        android:layout_width="178dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="124dp"
+        android:layout_marginEnd="41dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/derc"
+        android:text="RIGHT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_atack"
+        app:layout_constraintStart_toEndOf="@+id/btn_left"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="64dp"
+        android:text="RIGHT"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_right"
+        app:layout_constraintStart_toStartOf="@+id/btn_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="64dp"
+        android:text="LEFT"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_left"
+        app:layout_constraintEnd_toEndOf="@+id/btn_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="117dp"
+        android:text="MOVE"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_accel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_atack" />
+
+    <ImageButton
+        android:id="@+id/btn_accel"
+        android:layout_width="182dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="59dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/accel"
+        android:text="ACCEL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/btn_atack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/atack"
+        android:text="ATACK"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
